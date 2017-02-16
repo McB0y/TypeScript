@@ -5,6 +5,9 @@ function sayHi(animal:Animal){
    console.log("Hola "+ animal.name);
 }
 
+/*No se puede ver como es que se hace el require hacia el modulo Dog*/
+
+
 sayHi(new Dog("Timmy"));
 
 //La manera en la que se estan utilizando la importación de módulos 
