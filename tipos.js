@@ -8,3 +8,4 @@ color = "red";
 var fullName = "Bob Bobington";
 var age = 37;
 var sentence = "Hola mi nombre es " + fullName + "\nI'll be " + (age + 1) + " years old next month";
+//volvere a subir los archivos tengo un problema con mi equipo.
