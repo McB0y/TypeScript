@@ -16,7 +16,8 @@ let smartPhone: { capacidad: string, sistemaOperativo: string, compania: string 
 }
 
 
-//No quiero validar las estructuras de los objetos siempre y es por esa razón que implemento una interfaz
+//No quiero validar las estructuras de los objetos
+//siempre y es por esa razón que implemento una interfaz.
 
 
 
@@ -31,7 +32,7 @@ let computadora:Caracteristicas = {
 
 };
 
-let smartPhone:  = {
+let smartPhone : Caracteristicas = {
   capacidad: "32GB",
   sistemaOperativo: "iOS",
   compania: "Apple"
@@ -44,13 +45,14 @@ interface Caracteristicas {
 }
 
 
-//NOTE: si se le hace un cambio a las propiedades de los objetos o se quieren agregar nuevas,
-//Nos arrojara un error ya que
+//NOTE: si se le hace un cambio a las propiedades de los
+//objetos o se quieren agregar nuevas, nos arrojara un error ya que
+//debe de cumplir la estructura de la interface.
 
 interface CaracteristicasOpcional {
   capacidad?:string,//Que sea opcional.
   sistemaOperativo?:string,//Que sea opcional
   compania:string,
   encender(orden:string):void{console.log("Enciende!" + orden)},//Todo el que implemente esta interfaz debe implementar este metodo
-  apagar?(orden:string):void{console.log("Apagate " + orden)}//En cambio implementar este es opcional
+  apagar?(orden:string):void{console.log("Apagate" + orden)}//En cambio implementar este es opcional
 }
