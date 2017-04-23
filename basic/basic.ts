@@ -75,3 +75,16 @@ enum Volumen {string,//TypeScript lo toma como un elemento de nuestra enumeraci�
 }
 
 console.log(Volumen.string);//Nos regresara 2 que es el ultimo que encontro en la enumeracón
+
+
+
+//Casteos en TypeScript : Ejemplo de la documentación oficial.
+
+let someValue: any = "this is a string";
+
+let strLength: number = (<string>someValue).length;
+
+//Como podemos ver esto es muy útil si utilizamos any y después utilizamos
+//esa variable en alguna operación propia de algun tipo de dato.
+let vector : any = [1,2,3,4,5,6];
+let vector1 : number = (<number[]>vector).push(7);
