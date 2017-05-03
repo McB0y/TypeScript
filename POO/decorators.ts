@@ -133,3 +133,6 @@ lex.plan = function(){
 
 //Viendo los resultados después de intentar modificar el método.
 lex.plan();
+
+
+//Angular utiliza estas funciones como metadata que describira a sus componentes.
